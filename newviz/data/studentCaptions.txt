@@ -1,0 +1,1 @@
+["We want to build a robot with gripper.", "Not really", "Are you happy with your project? (Rate from 1 to 5 where 1 is not happy and 5 is very happy):4", "Is the project going well?:Yes", "Our robot has 2 motors , 1 motor for gripper and 1 motor for movement.", "Are you happy with your project? (Rate from 1 to 5 where 1 is not happy and 5 is very happy):3"]

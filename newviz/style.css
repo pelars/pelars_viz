@@ -1,0 +1,371 @@
+.mainSVG {
+    left: 0px;
+    top: 0px;
+}
+body{
+  /*bac gkground-color: #dae8e8;*/
+}
+@font-face {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 100;
+    src: url('assets/Fonts/Gotham-Book.otf');
+}
+#allAbout{
+    position: fixed;
+    font-size: 10px;
+    letter-spacing: 0.5pt;
+    right: 11.6em;
+    margin-top: 2.8em;
+    padding: 5px;
+    font-weight: 300px;
+    border: 2px gray dotted;
+    display: none;
+    padding: 5 10 10 10;
+    width: 100px;
+    position: absolute;
+    right: 2.5%;
+    top: 29px;
+    background: pink;
+}
+/*.behindRect{
+  display:none;
+}*/
+.svgTwo{
+  display:none;
+  position: absolute;
+  top: 79px;
+  left: 0px;
+}
+.clickThis{
+  cursor:pointer;
+}
+.clickThis:hover{
+  opacity:.3;
+}
+
+.video{
+    right: 25.6%;
+    top: 22%; 
+    position: absolute;
+    background-color: white;
+    display: none;
+    width: 50%;
+    border: 6px solid lightgrey;
+}
+.vidX{
+    right: 26.3%;
+    top: 26%;
+    position: absolute;
+    background-color: white;
+    display: none;
+    border: 4px solid red;
+    display:none;
+    opacity:1;
+    cursor: pointer;
+}
+
+#container {
+    /*width:100%;*/
+    height:100%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    /*font-family: Officina;*/
+    font-family:Gotham;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    top: 75px;
+    left: 2px;
+    background-color: #f7f7f7;
+    margin:1%;
+/*            width: 8.27in;
+    height: 5.83in;*/
+}
+.backSVG{
+    /*height:100%;*/
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    /*font-family: Officina;*/
+    font-family:Gotham;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    /*top: 75px;*/
+    left: 2px;
+    background-color: #f7f7f7;
+    /*margin:1%;*/
+}
+
+#timeline {
+    /*margin-top: .55in;*/
+    /*margin-left: 50px;*/
+    /*height: 2.1in;*/
+    /*position: absolute;*/
+    /*background-color: white;*/
+    /*color: black;*/
+}
+text{
+    font-family:Gotham;
+    color: #3d3d3c
+}
+text.textSoft,
+text.textHard {
+    font-size: 6pt;
+}
+
+#img {
+    float: left;
+    padding: 10px;
+    width: 30px;
+}
+
+.date {
+    float: left;
+    margin-top: 19px;
+    text-align: left;
+    font-size: 16px;
+    height: 39.5px;
+    color: black;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.name {
+    position: absolute;
+    margin-top: 19px;
+    text-align: left;
+    font-size: 32px;
+    height: 39.5px;
+    color: black;
+    right: 45px;
+}
+
+.boxname {
+    margin-top: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+text.button1,
+text.button2 {
+    font-weight: bold;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #3d3d3c;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-size: 8px;
+}
+image.clip-rect {
+    /*display:none;*/
+    -webkit-clip-path:inset(50% 40% 30% 40%);
+}
+image.clip-rect:hover{
+    cursor: pointer;
+    -webkit-clip-path: inset(0% 0% 0% 0%);
+}
+
+image#clip-circ {    
+  -webkit-clip-path: circle(20% at 50% 50%);
+    /*transform: translate(0px,0px);*/
+}
+/*image#clip-circ:hover {    */
+    /*-webkit-clip-path: inset(0% 0% 0% 0%);*/
+    /*transform: translate(0px,10px);*/
+/*}*/
+
+#capt:hover{
+  cursor:pointer;
+  opacity:.4;
+}
+
+
+image.button2{
+  cursor:pointer;
+}
+image.button2:hover{
+  cursor:pointer;
+}
+image.button1{
+  cursor:pointer;
+}
+image.camIcon{
+  cursor:pointer;
+}
+image.studCommentIcon{
+  cursor:pointer;
+}
+image.vidIcon{
+  cursor:pointer;
+}
+
+/*image.commentIcon{
+    display:none;
+}
+image.button1{
+    display:none;
+}
+image.button2{
+    display:none;
+}
+image.camIcon{
+    display:none;
+}*/
+.kitlabels{
+    /*display:none;*/
+    font-size:8;    
+}
+.backlabels{
+    font-size:11;
+}
+/*#textDescrip{
+  display:none;
+}*/
+
+/*********************
+HEADER STYLES
+*********************/
+/*.header {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #CCCCCC;
+  display: block;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+}*/
+header{
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    /* border-bottom: 1px solid #CCCCCC; */
+    display: block;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    padding-bottom: 20px;
+    opacity: .9;
+  
+  }
+
+#inner-header{
+    font-size:11px;
+    font-family:Gotham;
+}
+#logo {
+    z-index: 500;
+    position: absolute;
+    top: 2px;
+    left: 1%;
+}
+#logo a {
+  color: #3d3d3c;
+}
+
+#logo  a > img {
+  position:absolute;
+  /*top:5px;*/
+  /*left:7.5%;*/
+  /*width:85%;*/
+       width: 50px; 
+
+  height:auto;
+  /*margin-left: 30px;*/
+}
+#logo:hover{
+    cursor:pointer;
+}
+#home {
+    height: 50px;
+    /* width: 100%; */
+    text-align: right;
+    position: fixed;
+    padding-left: 10px;
+    top: 5px;
+    font-size: 11px;
+    left: 4.5%;
+    color: #3d3d3c;
+    padding-top: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-left: 11px;
+/*  height: 50px;
+  width: 100%;
+  text-align: right;
+  position: fixed;
+  padding-right: 10px;
+  top: 5px;
+font-size: 11px;
+color: #3d3d3c;
+padding-top: 2px;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 0.5px;*/
+}
+#home h1 {
+  color: #3d3d3c;
+  padding-top: 2px;
+}
+#howto {
+  padding: 5 10 0 10;
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    right: 2.5%;
+    top: 29px;
+    /*border-bottom: 1px solid black;*/
+    /* background-repeat: no-repeat; */
+    /* background-position: right; */
+}
+#howto h3{
+    margin-top: 0px;
+}
+#howto:hover{
+    cursor: pointer;
+    /* background-color: #3d3d3c; */
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+
+
+
+
+
+
+
+/* Hoverbox */
+
+#hoverbox {
+    pointer-events: none;
+/*    right:7.5%;
+    top:77px;*/
+}
+
+#hoverbox rect {
+    shape-rendering: crispEdges;
+}
+/*#hoverbox rect.imports {
+    fill: #56a6d5;
+
+}
+#hoverbox rect.exports {
+    fill: #02d2ee;
+}
+*/
+#hoverbox.hidden {
+    display: none;
+}

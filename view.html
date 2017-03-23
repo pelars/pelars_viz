@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="datatables/media/css/jquery.dataTables.css ">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/png" href="pelarslogo.png" sizes="16x16">
+<script src="signals.min.js" type="text/javascript"></script>
+<script src="crossroads.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf8" src="jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="tables.js" type="text/javascript"></script>
+<meta charset="US-ASCII">
+<script type="text/javascript">
+
+	crossroads.addRoute('/', function() {
+		alert("Insert a path!");
+	});
+
+	crossroads.addRoute('/{any}', function(any) {
+		getTable(any, "table");
+	});
+	
+	crossroads.addRoute('/{any}?{par}', function(any,par) {
+		getTable(any + "?" + par, "table");
+	});
+
+	crossroads.addRoute('/{any}/{id}', function(any, id) {
+		var single = true;
+		if (any == "data" || any == "multimedia" || any == "phase") {
+			single = false;
+		}
+
+		getTable(any + "/" + id, "table", single);
+	});
+	
+	crossroads.addRoute('/{any}/{id}/{type}', function(any, id, type) {
+
+		getTable(any + "/" + id + "/" + type, "table", false);
+	});
+	
+	
+	crossroads.addRoute('/{any}/{id}?{par}', function(any,id,par) {
+		getTable(any + "/" + id + "?" + par, "table");
+	});
+
+	crossroads.bypassed.add(function(request) {
+		alert(request + ' seems to be a dead end...');
+	});
+
+	//Listen to hash changes
+	window.addEventListener("hashchange", function() {
+		var route = '/';
+		var hash = window.location.hash;
+		if (hash.length > 0) {
+			route = hash.split('#').pop();
+		}
+		crossroads.parse(route);
+	});
+
+	// trigger hashchange on first page load
+	window.dispatchEvent(new CustomEvent("hashchange"));
+</script>
+<title>Visualization</title>
+</head>
+<body>
+	<table id="table" border=1>
+	<thead id="thead"></thead>
+	<tbody id="tbody"></tbody>
+	</table>
+</body>
+</html>

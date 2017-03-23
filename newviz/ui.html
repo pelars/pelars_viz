@@ -1,0 +1,99 @@
+
+<html>
+
+<head>
+    <title>PELARS Visualization V2</title>
+
+    <link href="tipsy.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="assets/d3.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="assets/underscore-min.js"></script>
+    <script src="assets/mapper.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div id="inner-header">
+            <div id="logo">
+                <p><a href="http://ciid.dk/research" rel="nofollow"><img src="assets/blackLogo.png" alt="PELARS"></a></p>
+            </div>
+            <div id="home">
+                <h1>PELARS data streams</h1>
+            </div>
+                    <div id="allAbout">
+                        In PELARS, we are researching and prototyping systems to better understand and support hands-on learning.
+                    </div>
+                <div id="howto">
+                <h3>about</h3>
+                </div>
+        </div>
+    </header>
+    <div id="container">
+
+    </div>
+</body>
+
+<script type="text/javascript" src="pelarsdata.js"></script>
+<script type="text/javascript" src="ui.js"></script>
+<script type="text/javascript" src="staticData1.js"></script>
+<script>
+$(document).ready(function()
+{
+// loader();
+// function loader(){
+//     load= d3.select("#container").append("svg")
+//         .attr("class", "loadSVG")
+//         .attr("width",w).attr("height",h)
+//         .attr("transform", "translate(" + 0 + "," + 0 + ")")
+//     d3.select(".loadSVG").append("svg:circle").attr("class","loader")
+//         .attr("cx",w/2).attr("cy",h/2)
+//         .attr("fill","none").attr("r",h/20)
+//         .attr("stroke-width",10).attr("stroke","pink").attr("stroke-opacity",.3).attr("stroke-dasharray",3)
+    
+//     for (i=0; i<10; i++){
+//         d3.select(".loader")
+//             .transition().duration(2000+i*100).attr("r",h/2).attr("stroke-width",i*10).attr("stroke-dasharray",1)
+//             .each("end", function(){ 
+//                 d3.select(this).transition().duration(1000+i*100).attr("r",h/8).attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                 .each("end", function(){ 
+//                     d3.select(this).transition().duration(2000+i*100).attr("r",h/2).attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                         .each("end", function(){ 
+//                             d3.select(this).transition().duration(1000+i*100).attr("r",h/10).attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                                 .each("end", function(){ 
+//                                     d3.select(this).transition().duration(2000+i*100).attr("r",h/4).attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                                         .each("end", function(){
+//                                             d3.select(this).transition().ease("bounce").duration(1000+i*100).attr("r",h/10).attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                                                 .each("end", function(){
+//                                                     d3.select(this).transition().duration(1000+i*100)
+//                                                         .ease("bounce")
+//                                                         // .attr("r",h/2)
+//                                                         .attr("cy",h)
+//                                                         .attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                                                         .each("end", function(){
+//                                                             d3.select(this).transition().duration(1000+i*100).attr("r",h/8).attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                                                                 .each("end", function(){
+//                                                                     d3.select(this).transition().duration(2000)
+//                                                                         .attr("cy",h/2 - 20).attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                                                                         .each("end", function(){
+//                                                                             d3.select(this)
+//                                                                                 .transition().duration(2000)
+//                                                                                 .ease("bounce")
+//                                                                                 .attr("cy",h).attr("stroke-width",i*10).attr("stroke-dasharray",i)
+//                                                                         })
+//                                                                 })
+//                                                         })
+//                                                 })
+//                                         })
+//                                 }) 
+//                             })
+//                     })
+//             })
+//     }
+// }
+//     // init SVG and then call dataStart
+    setSVG(dataStart)
+}
+)
+</script>
+</html>

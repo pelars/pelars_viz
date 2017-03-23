@@ -1,0 +1,11 @@
+name	descrip	type	side
+Body	The PELARS system tracks hands and records when looking at the computer, his or her face is noted.	0	0
+Timeline	Look at the session over time. Look at the session over time. Look at the session over time.	1	1
+Body	How are students moving their hands? Are they looking at the screen? How close are they to one another?	2	1
+Kit	The usage of the physical computing components (kit) are tracked and displayed over time.	2	1
+Button	When the students pressed the lightbulb or thundercloud buttons - along with the associated system images.	2	1
+Documentation	The student use of the mobile documentation tool is shown here, along with images taken by the system.	2	1
+Phases	The phases that the project underwent - from the researcher notes.	3	3
+Links	The links of the physical components with software blocks.	3	2
+Compare	Compare this session to overall sessions.	3	2
+Summary	Look at the session overall.	4	2

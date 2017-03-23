@@ -1,0 +1,222 @@
+<html>  
+<head>  
+<title>DataCard</title>  
+<script type="text/javascript" src="assets/jquery-1.11.3.min.js"></script>
+
+<script type = "text/javascript" src="underscore/underscore-min.js"></script>
+<script type = "text/javascript" src="assets/d3.min.js"></script>
+<script src="assets/mapper.js"></script>
+
+<style>  
+.mainSVG{
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+    @font-face {
+      font-family: 'Officina';
+      font-style: normal;
+      font-weight: 100;
+      src: url('assets/itc-officina-sans-lt-book.ttf') format('truetype');
+    }
+    
+    #container {
+      width: 7in; 
+      /*6.25in;*/
+      height: 5in;
+      /*4.25in;*/
+      margin: 0;
+      padding: 0;
+      background-size: 8.27in 5.83in;
+      /*6.25in 4.25in;*/
+      background-repeat: no-repeat;
+      font-family: Officina;
+      color:white;
+      font-size:8px;
+
+
+
+          text-align: center;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    width: 8.27in;
+    height: 5.83in;
+    /* background-color: #15989C; */
+    /*border: 3px solid #15989C;*/
+    }
+    #timeline{
+      margin-top:.55in;
+      margin-left:50px;
+      height: 2.1in; 
+      position:absolute;
+      background-color:white;
+      color:black;
+    }
+    #network{
+          /*position:absolute;*/
+      margin-top:2.9in;
+            height: 2in;
+
+    }
+    #ardinfo{
+    position: absolute;
+    margin-top: 3.3in;
+    width: 229px;
+    margin-left: 59px;
+    float: left;
+    }
+    #buttonuse{
+    margin-top: 3.3in;
+    width: 229px;
+    position: relative;
+    float: left;
+margin-left: 138px;
+    }
+    #facehand{
+
+    height: 2in;
+    position: absolute;
+    margin-top: 3.3in;
+    width: 229px;
+        margin-left: 564px;
+    }
+
+    #comments{
+margin-top: 4.4in;
+    margin-left: 10px;
+    height: .55in;
+    width: 3.365in;
+/*      margin-top:4.5in;
+      margin-left:10px;
+      height: .3in;
+      width: 3in;*/
+      position:absolute;
+      background-color:white;
+      color:black;
+    }
+
+    text.textSoft, text.textHard{
+      font-size:6pt;
+    }
+    #img{
+      float:left;
+      padding:10px;
+      width:30px;
+    }
+    .date{
+    float: left;
+    margin-top: 19px;
+    text-align: left;
+    font-size: 16px;
+    height: 39.5px;
+    color: black;
+    margin-left: 5px;
+    font-weight: bold;
+/*      float:left;
+      margin-top:13px;   
+      text-align:left;  
+      font-size:10px; */
+    }
+.name{
+    position: absolute;
+    margin-top: 19px;
+    text-align: left;
+    font-size: 32px;
+    height: 39.5px;
+    color: black;
+    right: 45px;
+}
+    .boxname{
+    margin-top: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+    text-align: left;
+    color:black;
+    font-weight:bold;
+/*      margin-top: 5px;
+      font-size:10px;*/
+    }
+    text.button1, text.button2{
+      font-weight:bold;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: black;
+        shape-rendering: crispEdges;
+    }
+    .axis text {
+        font-size: 8px;
+    }
+/*    path.timepathH{
+      fill:teal;
+      stroke:teal;
+    }*/
+</style>  
+</head>  
+<body>  
+
+<!-- <button id="submit">Export to  PDF</button> -->
+
+
+
+
+
+
+
+
+<div id="container"> 
+<div id = "logo">
+<!-- <embed src="assets/blackLogo.pdf" type='application/pdf'> -->
+
+<img id="img" src="assets/blackLogo.png" data-pin-nopin="true">
+  <!-- <img src="assets/PELARSlogo_WhiteCentered.png"> -->
+  <!-- <img src="assets/brown.png"> -->
+
+<div class="date">
+  PELARS DATA CARD<br>
+</div>
+
+</div> 
+  <div id = "timeline">
+    <div class="boxname">
+      SESSION OVER TIME 
+    </div>
+  </div>
+<!-- Hello -->
+<!--   <div id = "network">
+    <div class="boxname">
+      What did you use?
+    </div>
+  </div> -->
+
+  <div id = "ardinfo">
+    <div class="boxname">
+        WHAT DID YOU LINK? 
+    </div>
+  </div>
+  
+  <div id = "buttonuse">
+    <div class="boxname">
+      WHAT YOU USED, OVER TIME
+    </div>
+  </div>
+  <div id = "facehand">
+    <div class="boxname">
+      YOUR PROJECT PHASES  
+    </div>
+  </div>
+
+<!--   <div id = "comments">
+    <div class="boxname">
+      In this session we saw this and this and this 
+    </div>
+  </div> -->
+</div>  
+
+</body>
+<script type = "text/javascript" src="wholeCard.js"></script>  
+</html>  
+
+  

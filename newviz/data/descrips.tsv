@@ -1,0 +1,9 @@
+name	descrip	type	side
+Body	The PELARS system tracks hands and records when looking at the computer, his or her face is noted.	0	0
+Timeline	Look at the session over time - choose data streams about body movement, hardware/software usage, button presses, documentation, work phases, and system generated snapshots.	1	1
+Body	How are students moving their hands? Are they looking at the screen? How close are they to one another?	2	1
+Kit	Usage of hardware and software over time.	2	1
+Button	Lightbulb or thundercloud button press with a snapshot.	2	1
+Documentation	Show documentation tool use and images from system.	2	1
+Phases	Show the project phases.	3	3
+Summary	See the summary of the session and compare it to other sessions' movement, team closeness, time spent programming. How complex is your final artefact in terms of the links you programmed? How much time did you spend planning, building and reflecting? 	4	2

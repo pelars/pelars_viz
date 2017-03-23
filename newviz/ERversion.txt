@@ -1,0 +1,19 @@
+
+0) ui.html
+	added document ready
+
+1) ui.js
+	when d3.tsv completes continue: deferred or cb
+
+2) staticData1.js
+	removed pelars_authenticate to pelarsdata.js
+	moved document ready to ui.html => called dataStart
+	removed getToken
+	removed getSession
+	calling pelars_init
+	renamed all token as pelarstoken
+	removed thisSession and pelarstoken on top
+	renamed d3.json as dataaccess.XXXX
+	appended to snapshot result the token
+
+	protection of transition if not created
